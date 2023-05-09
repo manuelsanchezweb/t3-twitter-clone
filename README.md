@@ -1,5 +1,7 @@
 # Clon de Twitter
 
+Tutorial de webdevsimplified: https://www.youtube.com/watch?v=jqVm5_G1ZEE
+
 ## 🗂️ Repo
 
 Aquí: https://github.com/manuelsanchezweb/t3-twitter-clone](https://github.com/manuelsanchezweb/t3-twitter-clone)
