@@ -34,3 +34,4 @@ Para ello, cada vez que queramos hacerlo, haremos un deploy request en dev.
 ## 🚚 Providers
 
 - [Discord](https://discord.com/developers/applications) - No olvides http://localhost:3000/api/auth/callback/discord para el redirect en dev -> Más info: https://discord.com/developers/applications/1105601300521037855/oauth2/general
+- [GitHub](https://github.com/settings/developers) - En mi caso, en las apps de la org
