@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 import { VscHeartFilled, VscHeart } from "react-icons/vsc";
 import { IconHoverEffect } from "./IconHoverEffect";
 import { api } from "~/utils/api";
+import { LoadingSpinner } from "./LoadingSpinner";
 
 type Tweet = {
   id: string;
@@ -36,14 +37,19 @@ const InfiniteTweetList = ({
   hasMore,
 }: InfiniteTweetListProps) => {
   //   console.log(tweets);
-  if (isLoading) return <div className="p-4">Loading...</div>;
+  if (isLoading)
+    return (
+      <div className="p-4">
+        <LoadingSpinner />
+      </div>
+    );
   if (isError) return <div className="p-4">Error</div>;
   if (tweets == null || tweets.length === 0) return <p>You have no tweets</p>;
 
   return (
     <ul>
       <InfiniteScroll
-        loader={"Loading..."}
+        loader={<LoadingSpinner />}
         hasMore={hasMore}
         next={fetchNewTweets}
         dataLength={tweets.length}
