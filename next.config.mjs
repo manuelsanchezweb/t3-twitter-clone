@@ -13,6 +13,13 @@ const config = {
       "avatars.githubusercontent.com",
       "media-exp2.licdn.com",
       "media.linkedin.com",
+      "media.licdn.com",
+    ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+      },
     ],
   },
   /**
