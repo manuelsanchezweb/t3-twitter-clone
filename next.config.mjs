@@ -12,6 +12,7 @@ const config = {
       "cdn.discordapp.com",
       "avatars.githubusercontent.com",
       "media-exp2.licdn.com",
+      "media.linkedin.com",
     ],
   },
   /**
