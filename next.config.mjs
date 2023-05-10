@@ -8,7 +8,11 @@ await import("./src/env.mjs");
 const config = {
   reactStrictMode: true,
   images: {
-    domains: ["cdn.discordapp.com"],
+    domains: [
+      "cdn.discordapp.com",
+      "avatars.githubusercontent.com",
+      "media-exp2.licdn.com",
+    ],
   },
   /**
    * If you have `experimental: { appDir: true }` set, then you must comment the below `i18n` config

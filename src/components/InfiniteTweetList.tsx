@@ -34,9 +34,9 @@ const InfiniteTweetList = ({
   fetchNewTweets,
   hasMore,
 }: InfiniteTweetListProps) => {
-  console.log(tweets);
-  if (isLoading) return <div>Loading...</div>;
-  if (isError) return <div>Error</div>;
+  //   console.log(tweets);
+  if (isLoading) return <div className="p-4">Loading...</div>;
+  if (isError) return <div className="p-4">Error</div>;
   if (tweets == null || tweets.length === 0) return <p>You have no tweets</p>;
 
   return (
