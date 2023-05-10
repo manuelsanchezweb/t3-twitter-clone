@@ -48,7 +48,7 @@ const InfiniteTweetList = ({
         dataLength={tweets.length}
       >
         {tweets.map((tweet) => {
-          return <TweetCard {...tweet} />;
+          return <TweetCard key={tweet.id} {...tweet} />;
         })}
       </InfiniteScroll>
     </ul>
@@ -68,7 +68,7 @@ function TweetCard({
   likedByMe,
 }: Tweet) {
   return (
-    <li key={id} className="flex gap-4 border-b p-4">
+    <li className="flex gap-4 border-b p-4">
       <Link href={`/profiles/${user.id}`}>
         <ProfileImage src={user.image} />
       </Link>
