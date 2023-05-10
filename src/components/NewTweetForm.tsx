@@ -32,7 +32,7 @@ function Form() {
   }, [inputValue]);
 
   const createTweet = api.tweet.create.useMutation({
-    onSuccess: (newTweet) => {
+    onSuccess: () => {
       //   console.log(newTweet);
       setInputValue("");
     },
@@ -40,7 +40,7 @@ function Form() {
 
   if (session.status !== "authenticated") return null;
 
-  const handleTweetSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleTweetSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (inputValue.trim().length === 0) return;
     createTweet.mutate({ content: inputValue });
